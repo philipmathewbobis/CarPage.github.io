@@ -1,0 +1,852 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    height: 95vh;
+    background-image: url("https://i.redd.it/4k-wallpaper-luxury-sports-car-v0-168nfxwm54ta1.jpg?width=3840&format=pjpg&auto=webp&s=0c7e70a29e75f9e9e853831c7c59eb9409a24c9d");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+}
+
+.header h1 {
+    font-size: 40px;
+    color: black;
+    font-weight: 700;
+}
+
+.header a {
+    font-size: 20px;
+    color: black;
+    font-weight: 450;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header .nav-links {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links a {
+    background-color: none;
+    border-radius: 6px;
+    padding: 7px 7px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    background-color: #5e60ce;
+    color: white;
+}
+
+h1, a {
+    text-transform: uppercase;
+    color: black;
+}
+
+.content {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.content h3 {
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+}
+
+.content p {
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+}
+
+.button button {
+    width: 150px;
+    border-radius: 6px;
+    padding: 15px 10px;
+    text-transform: uppercase;
+    background-color: #5390d9;
+    border: none;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.button button:hover, .button button:focus {
+    background-color: #5e60ce;
+}
+
+.specifications {
+    width: 80vw;
+    height: 30vh;
+    margin: 70px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 25px 15px;
+    align-items: baseline;
+    box-shadow: 0 10px 40px 0 rgba(38,40,64,.2);
+    border-radius: 7px;
+}
+
+.specifications .first-column {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.specifications .second-column {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.specifications  .select label {
+    font-size: 20px;
+    color: black;
+    font-weight: 400;
+    display: block;
+    text-transform: capitalize;
+}
+
+.specifications .first-column select,
+.specifications .second-column select {
+    width: 12rem;
+    font-size: 17px;
+    background-color: #f8f8f8;
+    border: 1px soid #f8f8f8;
+    padding: 10px 17px;
+    margin: 0.6em 0 0;
+    border-radius: 6px;
+    line-height: 1.4;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+    color: #818998;
+    outline: 0 !important;
+}
+
+.specifications .search-button button{
+    width: 12rem;
+    font-size: 18px;
+    padding: 15px 0;
+    margin: 0 2rem 4rem 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #4e4ffa;
+    color: white;
+    cursor: pointer;
+}
+
+.specifications .search-button button:hover {
+    background-color: #1818cd;
+}
+
+@media (max-width: 1100px) {
+    .header h1{
+        font-size: 30px;
+        color: black;
+        font-weight: 700;
+    }
+    .header a {
+        font-size: 15px;
+        color: black;
+        font-weight: 450;
+    }
+    .nav-links a {
+        background-color: none;
+        border-radius: 6px;
+        padding: 5px 5px;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    }
+    .header .nav-links {
+        width: 700px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .content h3 {
+        font-size: 30px;
+        color: white;
+        font-weight: 600;
+    }
+    .content p {
+        font-size: 14px;
+        color: white;
+        line-height: 1.5;
+    }
+    .button button {
+        width: 130px;
+        border-radius: 6px;
+        padding: 15px 10px;
+        text-transform: uppercase;
+        background-color: #5390d9;
+        border: none;
+        font-size: 15px;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+    }
+    .specifications {
+        width: 80vw;
+        height: 30vh;
+        margin: 70px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 25px 15px;
+        align-items: baseline;
+        box-shadow: 0 10px 40px 0 rgba(38,40,64,.2);
+        border-radius: 6px;
+    }
+    .specifications .first-column {
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .specifications .second-column {
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .specifications  .select label {
+        font-size: 15px;
+        color: black;
+        font-weight: 400;
+        display: block;
+        text-transform: capitalize;
+    }
+    .specifications .first-column select,
+    .specifications .second-column select {
+    width: 9rem;
+    font-size: 15px;
+    background-color: #f8f8f8;
+    border: 1px soid #f8f8f8;
+    padding: 10px 17px;
+    margin: 0.8em 0 0;
+    border-radius: 6px;
+    line-height: 1.4;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+    color: #818998;
+    outline: 0 !important;
+}
+.specifications .search-button button{
+    width: 10rem;
+    font-size: 18px;
+    padding: 15px 0;
+    margin: 0 2rem 4rem 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #4e4ffa;
+    color: white;
+    cursor: pointer;
+}
+
+}
+
+@media (max-width: 970px) {
+    .header h1{
+        font-size: 20px;
+        color: black;
+        font-weight: 700;
+    }
+    .header a {
+        font-size: 12px;
+        color: black;
+        font-weight: 450;
+    }
+    .nav-links a {
+        background-color: none;
+        border-radius: 6px;
+        padding: 5px 5px;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    }
+    .header .nav-links {
+        width: 600px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .content h3 {
+        font-size: 20px;
+        color: white;
+        font-weight: 600;
+    }
+    .content p {
+        font-size: 10px;
+        color: white;
+        line-height: 1.5;
+    }
+    .button button {
+        width: 130px;
+        border-radius: 6px;
+        padding: 15px 10px;
+        text-transform: uppercase;
+        background-color: #5390d9;
+        border: none;
+        font-size: 15px;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+    }
+    .specifications {
+        width: 80vw;
+        height: 30vh;
+        margin: -70px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 25px 15px;
+        align-items: baseline;
+        box-shadow: 0 10px 40px 0 rgba(38,40,64,.2);
+        border-radius: 6px;
+    }
+    .specifications .first-column {
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .specifications .second-column {
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .specifications  .select label {
+        font-size: 13px;
+        color: black;
+        font-weight: 400;
+        display: block;
+        text-transform: capitalize;
+    }
+    .specifications .first-column select,
+    .specifications .second-column select {
+    width: 9rem;
+    font-size: 13px;
+    background-color: #f8f8f8;
+    border: 1px soid #f8f8f8;
+    padding: 10px 17px;
+    margin: 0.8em 0 0;
+    border-radius: 6px;
+    line-height: 1.4;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+    color: #818998;
+    outline: 0 !important;
+}
+.specifications .search-button button{
+    width: 8rem;
+    font-size: 15px;
+    padding: 13px 1px;
+    margin: 0 2rem 4rem 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #4e4ffa;
+    color: white;
+    cursor: pointer;
+}
+}
+
+@media (max-width: 800px) {
+    .header h1{
+        font-size: 15px;
+        color: black;
+        font-weight: 700;
+    }
+    .header a {
+        font-size: 10px;
+        color: black;
+        font-weight: 450;
+    }
+    .nav-links a {
+        background-color: none;
+        border-radius: 6px;
+        padding: 5px 5px;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    }
+    .header .nav-links {
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .content h3 {
+        font-size: 17px;
+        color: white;
+        font-weight: 600;
+    }
+    .content p {
+        font-size: 8px;
+        color: white;
+        line-height: 1.5;
+    }
+    .button button {
+        width: 115px;
+        border-radius: 6px;
+        padding: 10px 7px;
+        text-transform: uppercase;
+        background-color: #5390d9;
+        border: none;
+        font-size: 10px;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+    }
+    .content {
+        margin: 0 0 10rem;
+    }
+    .specifications {
+        width: 80vw;
+        height: 24vh;
+        margin: -170px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 30px 15px;
+        align-items: baseline;
+        box-shadow: 0 10px 40px 0 rgba(38,40,64,.2);
+        border-radius: 6px;
+    }
+    .specifications .first-column {
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .specifications .second-column {
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .specifications  .select label {
+        font-size: 11px;
+        color: black;
+        font-weight: 400;
+        display: block;
+        text-transform: capitalize;
+    }
+    .specifications .first-column select,
+    .specifications .second-column select {
+    width: 8rem;
+    font-size: 11px;
+    background-color: #f8f8f8;
+    border: 1px soid #f8f8f8;
+    padding: 10px 17px;
+    margin: 0.8em 0 0;
+    border-radius: 6px;
+    line-height: 1.4;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+    color: #818998;
+    outline: 0 !important;
+}
+.specifications .search-button button{
+    width: 7rem;
+    font-size: 13px;
+    padding: 13px 1px;
+    margin: 0 2rem 6rem 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #4e4ffa;
+    color: white;
+    cursor: pointer;
+}
+}
+
+@media (max-width: 600px) {
+    .nav-links, h1 {
+        margin: 1rem 0 0;
+    }
+    .header h1{
+        font-size: 10px;
+        color: black;
+        font-weight: 700;
+    }
+    .header a {
+        font-size: 10px;
+        color: black;
+        font-weight: 450;
+    }
+    .nav-links a {
+        background-color: none;
+        border-radius: 4px;
+        padding: 5px 5px;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    }
+    .header .nav-links {
+        width: 350px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .content h3 {
+        font-size: 15px;
+        color: white;
+        font-weight: 600;
+    }
+    .content p {
+        font-size: 6px;
+        color: white;
+        line-height: 1.5;
+    }
+    .button button {
+        width: 110px;
+        border-radius: 6px;
+        padding: 10px 7px;
+        text-transform: uppercase;
+        background-color: #5390d9;
+        border: none;
+        font-size: 10px;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+    }
+    .content {
+        margin: 0 0 15rem;
+    }
+    .specifications {
+        width: 65vw;
+        height: 30vh;
+        margin: -300px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 30px 60px 30px 30px;
+        align-items: baseline;
+        box-shadow: 0 10px 40px 0 rgba(38,40,64,.2);
+        border-radius: 6px;
+    }
+    .specifications .first-column {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .specifications .second-column {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .specifications  .select label {
+        font-size: 11px;
+        color: black;
+        font-weight: 400;
+        display: block;
+        text-transform: capitalize;
+    }
+    .specifications .first-column select,
+    .specifications .second-column select {
+    width: 8rem;
+    font-size: 11px;
+    background-color: #f8f8f8;
+    border: 1px soid #f8f8f8;
+    padding: 10px 17px;
+    margin: 0.8em 0 0;
+    border-radius: 6px;
+    line-height: 1.4;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+    color: #818998;
+    outline: 0 !important;
+}
+.specifications .search-button button{
+    width: 5rem;
+    font-size: 12px;
+    padding: 11px 1px;
+    margin: 0 0 0 -7rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #4e4ffa;
+    color: white;
+    cursor: pointer;
+}
+}
+
+@media (max-width: 330px) {
+    .nav-links, h1 {
+        margin: 1rem 0 0;
+    }
+    .header h1{
+        font-size: 8px;
+        color: black;
+        font-weight: 700;
+    }
+    .header a {
+        font-size: 7px;
+        color: black;
+        font-weight: 450;
+    }
+    .nav-links a {
+        background-color: none;
+        border-radius: 3px;
+        padding: 3px 3px;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    }
+    .header .nav-links {
+        width: 130px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .content h3 {
+        font-size: 10px;
+        color: white;
+        font-weight: 600;
+    }
+    .content p {
+        font-size: 4px;
+        color: white;
+        line-height: 1.5;
+    }
+    .button button {
+        width: 90px;
+        border-radius: 4px;
+        padding: 8px 2px;
+        text-transform: uppercase;
+        background-color: #5390d9;
+        border: none;
+        font-size: 5px;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+    }
+    .content {
+        margin: 0 0 30rem;
+    }
+    .specifications {
+        width: 70vw;
+        height: 50vh;
+        margin: -450px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 30px 15px;
+        align-items: center;
+        box-shadow: 0 10px 40px 0 rgba(38,40,64,.2);
+        border-radius: 6px;
+    }
+    .specifications .first-column {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        left: 1rem;
+    }
+    
+    .specifications .second-column {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 0 50px 0;
+        align-items: center;
+        position: relative;
+        left: 1rem;
+    }
+    
+    .specifications  .select label {
+        font-size: 9px;
+        color: black;
+        font-weight: 400;
+        display: block;
+        text-transform: capitalize;
+    }
+    .specifications .first-column select,
+    .specifications .second-column select {
+    width: 7rem;
+    font-size: 9px;
+    background-color: #f8f8f8;
+    border: 1px soid #f8f8f8;
+    padding: 10px 17px;
+    margin: 0.8em 0 0;
+    border-radius: 6px;
+    line-height: 1.4;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+    color: #818998;
+    outline: 0 !important;
+}
+.specifications .search-button button{
+    width: 5rem;
+    font-size: 10px;
+    padding: 10px 1px;
+    margin: 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #4e4ffa;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top: 340px;
+    right: 112px;
+}
+}
+
+@media (max-width: 300px) {
+    .nav-links, h1 {
+        margin: 1rem 0 0;
+    }
+    .header h1{
+        font-size: 6px;
+        color: black;
+        font-weight: 700;
+    }
+    .header a {
+        font-size: 5px;
+        color: black;
+        font-weight: 450;
+    }
+    .nav-links a {
+        background-color: none;
+        border-radius: 3px;
+        padding: 3px 3px;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    }
+    .header .nav-links {
+        width: 110px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .content h3 {
+        font-size: 10px;
+        color: white;
+        font-weight: 600;
+    }
+    .content p {
+        font-size: 4px;
+        color: white;
+        line-height: 1.5;
+    }
+    .button button {
+        width: 90px;
+        border-radius: 4px;
+        padding: 8px 2px;
+        text-transform: uppercase;
+        background-color: #5390d9;
+        border: none;
+        font-size: 5px;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+    }
+    .content {
+        margin: 0 0 32rem;
+    }
+    .specifications {
+        width: 70vw;
+        height: 48vh;
+        margin: -450px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 30px 15px;
+        align-items: center;
+        box-shadow: 0 10px 40px 0 rgba(38,40,64,.2);
+        border-radius: 6px;
+    }
+    .specifications .first-column {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        left: 1rem;
+    }
+    
+    .specifications .second-column {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 0 50px 0;
+        align-items: center;
+        position: relative;
+        left: 1rem;
+    }
+    
+    .specifications  .select label {
+        font-size: 9px;
+        color: black;
+        font-weight: 400;
+        display: block;
+        text-transform: capitalize;
+    }
+    .specifications .first-column select,
+    .specifications .second-column select {
+    width: 7rem;
+    font-size: 9px;
+    background-color: #f8f8f8;
+    border: 1px soid #f8f8f8;
+    padding: 10px 17px;
+    margin: 0.8em 0 0;
+    border-radius: 6px;
+    line-height: 1.4;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+    color: #818998;
+    outline: 0 !important;
+}
+.specifications .search-button button{
+    width: 5rem;
+    font-size: 10px;
+    padding: 10px 1px;
+    margin: 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #4e4ffa;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top: 320px;
+    right: 100px;
+}
+}
